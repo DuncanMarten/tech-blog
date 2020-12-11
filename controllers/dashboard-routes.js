@@ -43,6 +43,14 @@ router.get('/', auth, (req, res) => {
     });
 });
 
+// create a post
+router.get('/create', (req, res) => {
+    
+
+    res.render('create-post');
+});
+
+
 // edit a post
 router.get('/edit/:id', auth, (req, res) => {
     Post.findOne({
