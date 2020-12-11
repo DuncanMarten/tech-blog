@@ -1,9 +1,11 @@
 {{#if posts.length}}
 <section>
-  <ol>
+  <ol class="list-unstyled">
     {{#each posts as |post|}}
     <li>
-      <a href="/dashboard/edit/{{post.id}}" class="edit-link">{{post.title}}</a>
+      <div class="card-header">
+        <a href="/dashboard/edit/{{post.id}}" class="edit-link">{{post.title}}</a>
+      </div>
     </li>
     {{/each}}
   </ol>
